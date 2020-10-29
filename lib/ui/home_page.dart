@@ -1,4 +1,5 @@
 import 'package:demoest/base/common/commonInsert.dart';
+import 'package:demoest/ui/scrollbar/dra_demo.dart';
 import 'package:demoest/ui/scrollbar/scbdemo.dart';
 import 'package:demoest/ui/scrollbar/scroll_bar.dart';
 import 'package:demoest/ui/sliver/CustomScrollView%20.dart';
@@ -81,6 +82,16 @@ class _HomeState extends State<Home> {
                   child: Text("滚动条滑动监听例子"),
                   onPressed: (){
                     Navigator.of(context).pushNamed(ScbDemo.SCBDEMO);
+                  },
+                ),
+                FlatButton(
+                  color: Colors.yellow,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  child: Text("拖动滚动条例子"),
+                  onPressed: (){
+                    Navigator.of(context).pushNamed(DraDemo.DRADEMO);
                   },
                 ),
               ],

@@ -1,7 +1,9 @@
 
+
 import 'package:demoest/ui/LaunchPage.dart';
 import 'package:demoest/ui/bloc/BlocDemo.dart';
 import 'package:demoest/ui/home_page.dart';
+import 'package:demoest/ui/scrollbar/dra_demo.dart';
 import 'package:demoest/ui/scrollbar/scbdemo.dart';
 import 'package:demoest/ui/scrollbar/scroll_bar.dart';
 import 'package:demoest/ui/sliver/CustomScrollView%20.dart';
@@ -96,5 +98,6 @@ Map<String,WidgetBuilder> routes = {
 
   ScrollBarDemo.SCROLLBARDEMO: (context) => ScrollBarDemo(),
   ScbDemo.SCBDEMO: (context) => ScbDemo(),
+  DraDemo.DRADEMO: (context) => DraDemo(),
 
 };

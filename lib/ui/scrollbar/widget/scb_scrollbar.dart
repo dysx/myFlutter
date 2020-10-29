@@ -137,16 +137,21 @@ class _SCBScrollBarState extends State<SCBScrollBar> {
                 top: thumbTop(height),
                 right: widget.scrollBarRight +
                     (widget.scrollBarWidth - widget.thumbWidht) / 2,
-                child: ClipRRect(
-                  borderRadius:
-                  BorderRadius.all(Radius.circular(widget.thumbHeight)),
-                  child: AnimatedOpacity(
-                    opacity: apaph,
-                    duration: const Duration(milliseconds: 500),
-                    child: Container(
-                      width: widget.thumbWidht,
-                      height: widget.thumbHeight,
-                      color: Color(0xFF1dc9ff),
+                child: GestureDetector(
+                  onTap: (){
+                    print("点击了滚动条");
+                  },
+                  child: ClipRRect(
+                    borderRadius:
+                    BorderRadius.all(Radius.circular(widget.thumbHeight)),
+                    child: AnimatedOpacity(
+                      opacity: apaph,
+                      duration: const Duration(milliseconds: 500),
+                      child: Container(
+                        width: widget.thumbWidht,
+                        height: widget.thumbHeight,
+                        color: Color(0xFF1dc9ff),
+                      ),
                     ),
                   ),
                 ),

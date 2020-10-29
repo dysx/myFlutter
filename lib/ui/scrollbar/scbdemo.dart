@@ -15,7 +15,7 @@ class ScbDemo extends StatefulWidget {
 }
 
 class ScbDemoState extends State<ScbDemo> {
-  ScrollController controller;
+  ScrollController controller = new ScrollController();
 
   @override
   Widget build(BuildContext context) {
