@@ -1,5 +1,5 @@
 import 'package:demoest/base/common/commonInsert.dart';
-import 'package:demoest/ui/routeTest/Test1.dart';
+import 'package:demoest/ui/home_page.dart';
 import 'package:demoest/utils/VersionInfo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -26,7 +26,7 @@ class LaunchPage extends BaseWidget {
 class LaunchPageState extends BaseWidgetState<LaunchPage> {
   @override
   Widget buildWidget(BuildContext context) {
-    return isShow ? launchPages : Test1();
+    return isShow ? launchPages : Home();
   }
 
   /// 引导页
@@ -147,7 +147,7 @@ class LaunchPageState extends BaseWidgetState<LaunchPage> {
 
   /// 立即进入
   void _go() {
-    Navigator.of(context).pushNamed(Test1.TEST1);
+    Navigator.of(context).pushNamed(Home.HOME);
     // BaseCommon.closeAllAndOpenPage(context, Test1());
   }
 

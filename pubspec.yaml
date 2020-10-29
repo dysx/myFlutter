@@ -57,6 +57,12 @@ dependencies:
   # webview
   flutter_inappbrowser: ^1.2.1
 
+  #bloc
+  bloc: ^4.0.0
+  flutter_bloc: ^4.0.0
+  equatable: ^1.0.0
+  wave: ^0.0.8
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

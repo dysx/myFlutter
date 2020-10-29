@@ -1,31 +1,29 @@
 import 'package:demoest/base/common/commonInsert.dart';
-import 'package:demoest/ui/routeTest/Test3.dart';
-import 'package:demoest/ui/routeTest/Test4.dart';
+import 'package:demoest/ui/scrollbar/scbdemo.dart';
+import 'package:demoest/ui/scrollbar/scroll_bar.dart';
 import 'package:demoest/ui/sliver/CustomScrollView%20.dart';
 import 'package:demoest/ui/sliver/NestedScrollViewDemo.dart';
 import 'package:demoest/ui/sliver/SliverDemo.dart';
 
-import 'Test1.dart';
-import 'Test2.dart';
 
 /// @name：
 /// @author qds
 /// @date 2020/10/23
-class Test1 extends StatefulWidget {
-  static const TEST1 = "/test1";
+class Home extends StatefulWidget {
+  static const HOME = "/Home";
 
-  Test1({Key key}) : super(key: key);
+  Home({Key key}) : super(key: key);
 
   @override
-  State createState() => new Test1State();
+  State createState() => new _HomeState();
 }
 
-class Test1State extends State<Test1> {
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("123"),
+        title: Text("首页"),
       ),
       body: EasyRefresh(
           child: Container(
@@ -70,9 +68,9 @@ class Test1State extends State<Test1> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(8))
                   ),
-                  child: Text("跳转到test2"),
+                  child: Text("scrollerbar自定义滚动条例子"),
                   onPressed: (){
-                    Navigator.of(context).pushNamed(Test2.TEST2);
+                    Navigator.of(context).pushNamed(ScrollBarDemo.SCROLLBARDEMO);
                   },
                 ),
                 FlatButton(
@@ -80,21 +78,11 @@ class Test1State extends State<Test1> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(8))
                   ),
-                  child: Text("跳转到test3"),
+                  child: Text("滚动条滑动监听例子"),
                   onPressed: (){
-                    Navigator.of(context).pushNamed(Test3.TEST3);
+                    Navigator.of(context).pushNamed(ScbDemo.SCBDEMO);
                   },
                 ),
-                FlatButton(
-                  color: Colors.yellow,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(8))
-                  ),
-                  child: Text("跳转到test4"),
-                  onPressed: (){
-                    Navigator.of(context).pushNamed(Test4.TEST4);
-                  },
-                )
               ],
             ),
           )

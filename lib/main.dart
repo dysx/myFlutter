@@ -1,9 +1,9 @@
 
 import 'package:demoest/ui/LaunchPage.dart';
-import 'package:demoest/ui/routeTest/Test1.dart';
-import 'package:demoest/ui/routeTest/Test2.dart';
-import 'package:demoest/ui/routeTest/Test3.dart';
-import 'package:demoest/ui/routeTest/Test4.dart';
+import 'package:demoest/ui/bloc/BlocDemo.dart';
+import 'package:demoest/ui/home_page.dart';
+import 'package:demoest/ui/scrollbar/scbdemo.dart';
+import 'package:demoest/ui/scrollbar/scroll_bar.dart';
 import 'package:demoest/ui/sliver/CustomScrollView%20.dart';
 import 'package:demoest/ui/sliver/NestedScrollViewDemo.dart';
 import 'package:demoest/ui/sliver/SliverDemo.dart';
@@ -86,13 +86,15 @@ class MainState extends State<Main>  {
 /// 所有页面路由
 Map<String,WidgetBuilder> routes = {
 
-  Test1.TEST1: (context) => Test1(),
-  Test2.TEST2: (context) => Test2(),
-  Test3.TEST3: (context) => Test3(),
-  Test4.TEST4: (context) => Test4(),
+  Home.HOME: (context) => Home(),
 
   SliverDemo.SLIVERDEMO: (context) => SliverDemo(),
   CustomScrollViewDemo.CUSTOMSCROLLVIEWDEMO: (context) => CustomScrollViewDemo(),
   NestedScrollViewDemo.NESTEDSCROLLVIEWDEMO: (context) => NestedScrollViewDemo(),
+
+  BlocDemo.BLOCDEMO: (context) => BlocDemo(),
+
+  ScrollBarDemo.SCROLLBARDEMO: (context) => ScrollBarDemo(),
+  ScbDemo.SCBDEMO: (context) => ScbDemo(),
 
 };
