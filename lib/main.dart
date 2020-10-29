@@ -5,6 +5,7 @@ import 'package:demoest/ui/routeTest/Test2.dart';
 import 'package:demoest/ui/routeTest/Test3.dart';
 import 'package:demoest/ui/routeTest/Test4.dart';
 import 'package:demoest/ui/sliver/CustomScrollView%20.dart';
+import 'package:demoest/ui/sliver/NestedScrollViewDemo.dart';
 import 'package:demoest/ui/sliver/SliverDemo.dart';
 import 'package:demoest/utils/LanguageUtil.dart';
 import 'package:demoest/utils/LocalImageSelecter.dart';
@@ -92,5 +93,6 @@ Map<String,WidgetBuilder> routes = {
 
   SliverDemo.SLIVERDEMO: (context) => SliverDemo(),
   CustomScrollViewDemo.CUSTOMSCROLLVIEWDEMO: (context) => CustomScrollViewDemo(),
+  NestedScrollViewDemo.NESTEDSCROLLVIEWDEMO: (context) => NestedScrollViewDemo(),
 
 };

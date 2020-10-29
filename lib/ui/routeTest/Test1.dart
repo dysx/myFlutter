@@ -2,6 +2,7 @@ import 'package:demoest/base/common/commonInsert.dart';
 import 'package:demoest/ui/routeTest/Test3.dart';
 import 'package:demoest/ui/routeTest/Test4.dart';
 import 'package:demoest/ui/sliver/CustomScrollView%20.dart';
+import 'package:demoest/ui/sliver/NestedScrollViewDemo.dart';
 import 'package:demoest/ui/sliver/SliverDemo.dart';
 
 import 'Test1.dart';
@@ -52,6 +53,16 @@ class Test1State extends State<Test1> {
                   child: Text("customscrollview自定义滑动效果"),
                   onPressed: (){
                     Navigator.of(context).pushNamed(CustomScrollViewDemo.CUSTOMSCROLLVIEWDEMO);
+                  },
+                ),
+                FlatButton(
+                  color: Colors.yellow,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  child: Text("NestedScrollViewDemo例子"),
+                  onPressed: (){
+                    Navigator.of(context).pushNamed(NestedScrollViewDemo.NESTEDSCROLLVIEWDEMO);
                   },
                 ),
                 FlatButton(
