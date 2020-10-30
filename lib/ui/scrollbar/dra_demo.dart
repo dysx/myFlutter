@@ -15,7 +15,7 @@ class DraDemo extends StatefulWidget {
 }
 
 class DraDemoState extends State<DraDemo> {
-  ScrollController controller;
+  ScrollController controller = new ScrollController();
 
 
   @override
